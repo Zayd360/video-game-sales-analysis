@@ -82,8 +82,6 @@ A linear regression model was used as a statistical method to analyze the relati
 
 ## 📊 Sample Visualizations
 
-*(Add your images in the `images/` folder and update paths)*
-
 ![Top Games](images/top_10_games.png)
 ![Sales Distribution](images/sales_distribution.png)
 ![Correlation Heatmap](images/correlation_heatmap.png)
