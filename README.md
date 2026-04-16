@@ -82,9 +82,9 @@ A linear regression model was used as a statistical method to analyze the relati
 
 ## 📊 Sample Visualizations
 
-![Top Games](images/top_10_games.png)
-![Sales Distribution](images/sales_distribution.png)
-![Correlation Heatmap](images/correlation_heatmap.png)
+![Top Games](images/Top_10_Games_by_Global_Sales.png)
+![Sales Distribution](images/Top_5_Platforms_by_Total_Sales.png)
+![Correlation Heatmap](images/Correlation_Between_Regional_and_Global_Sales.png)
 
 ---
 
