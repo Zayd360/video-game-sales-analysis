@@ -11,7 +11,6 @@ This project analyzes a comprehensive video game sales dataset to uncover how fa
 The analysis includes:
 
 - 📊 Exploratory Data Analysis (EDA)
-- ⚖️ Hypothesis Testing (T-Test & ANOVA)
 - 📈 Linear Regression (statistical model)
 - 🤖 KNN Regression (comparison model)
 
@@ -62,20 +61,6 @@ The following analyses and visualizations were produced:
 
 ---
 
-## ⚖️ Hypothesis Testing
-
-Two statistical tests were performed:
-
-### 1. T-Test (NA vs EU Sales)
-- **Null Hypothesis:** No significant difference between NA and EU sales
-- **Tests whether:** North America and Europe have statistically similar sales figures
-
-### 2. ANOVA (Genre vs Global Sales)
-- **Null Hypothesis:** All genres have the same mean global sales
-- **Tests whether:** Different genres produce significantly different sales outcomes
-
----
-
 ## 📈 Regression Analysis
 
 Two regression models were used to analyze the relationship between regional sales and global sales:
@@ -107,7 +92,7 @@ Two regression models were used to analyze the relationship between regional sal
 
 - Regional sales (NA, EU, JP) are strong predictors of global sales
 - Strong positive correlation exists between NA, EU, and global sales
-- Genre significantly affects game sales (confirmed by ANOVA)
+- Genre significantly affects game sales
 - A small number of top publishers dominate global sales figures
 - Sales peaked mid-2000s and show a declining trend in later years
 
