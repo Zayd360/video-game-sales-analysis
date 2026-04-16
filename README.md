@@ -1,50 +1,64 @@
-# 🎮 Video Game Sales Analysis (Nintendo DS)
+# 🎮 Video Game Sales Analysis
 
-An end-to-end data analysis project focused on understanding video game sales patterns on the Nintendo DS platform using statistical methods.
+An end-to-end data analysis project exploring video game sales patterns across platforms, genres, publishers, and regions using statistical methods and regression models.
 
 ---
 
 ## 📌 Overview
 
-This project analyzes video game sales data to explore how different factors such as region and genre influence global sales.
+This project analyzes a comprehensive video game sales dataset to uncover how factors such as platform, genre, publisher, and region influence global sales.
 
 The analysis includes:
 
-* Exploratory Data Analysis (EDA)
-* Data normalization
-* Hypothesis testing
-* Linear regression (statistical model)
+- 📊 Exploratory Data Analysis (EDA)
+- ⚖️ Hypothesis Testing (T-Test & ANOVA)
+- 📈 Linear Regression (statistical model)
+- 🤖 KNN Regression (comparison model)
 
 ---
 
 ## 📂 Dataset
 
-* Source: https://zenodo.org/records/5898311
-* Type: Public research dataset
+- **Source:** [Zenodo – Video Game Sales Dataset](https://zenodo.org/records/5898311)
+- **Type:** Public research dataset
 
-> Note: Government datasets were explored, but they did not provide sufficient detailed video game sales data. Therefore, a research dataset from Zenodo was used.
+> Note: Government datasets were explored but did not provide sufficient detailed video game sales data. A research dataset from Zenodo was used instead.
 
-### 📊 Dataset Features:
+### 📊 Dataset Features
 
-* Game Name
-* Platform
-* Year
-* Genre
-* Publisher
-* Regional Sales (NA, EU, JP)
-* Global Sales
+| Column | Description |
+|---|---|
+| `Name` | Game title |
+| `Platform` | Gaming platform (DS, PS2, Wii, etc.) |
+| `Year` | Year of release |
+| `Genre` | Game genre |
+| `Publisher` | Game publisher |
+| `NA_Sales` | North America sales (millions) |
+| `EU_Sales` | Europe sales (millions) |
+| `JP_Sales` | Japan sales (millions) |
+| `Other_Sales` | Rest of world sales (millions) |
+| `Global_Sales` | Total worldwide sales (millions) |
 
 ---
 
 ## 🔍 Exploratory Data Analysis (EDA)
 
-The following analyses were performed:
+The following analyses and visualizations were produced:
 
-* 📊 Top 10 best-selling DS games
-* 📈 Distribution of global sales
-* 📅 Yearly sales trends
-* 🎭 Genre-wise sales comparison
-* 🔥 Correlation between regional and global sales
+| # | Visualization |
+|---|---|
+| 1 | 🏆 Top 10 Best-Selling Games by Global Sales |
+| 2 | 🖥️ Top 5 Platforms by Total Sales |
+| 3 | 🎭 Popularity of Game Genres by Global Sales |
+| 4 | 📊 Number of Games by Genre |
+| 5 | 📅 Global Video Game Sales Trend Over Years |
+| 6 | 📦 Platform-wise Sales Distribution |
+| 7 | 🏢 Top 10 Publishers by Global Sales |
+| 8 | 🏅 Top Publisher by Region |
+| 9 | 🔥 Correlation Between Regional and Global Sales |
+| 10 | 📈 Sales Trends by Genre Over Time |
+| 11 | 🏭 Publisher Sales Trends Over Time |
+| 12 | 🔢 Top Publishers with Most Games Released |
 
 ---
 
@@ -53,49 +67,63 @@ The following analyses were performed:
 Two statistical tests were performed:
 
 ### 1. T-Test (NA vs EU Sales)
+- **Null Hypothesis:** No significant difference between NA and EU sales
+- **Tests whether:** North America and Europe have statistically similar sales figures
 
-* Tests whether there is a significant difference between NA and EU sales
-
-### 2. ANOVA (Genre vs Sales)
-
-* Tests whether different genres have significantly different sales
+### 2. ANOVA (Genre vs Global Sales)
+- **Null Hypothesis:** All genres have the same mean global sales
+- **Tests whether:** Different genres produce significantly different sales outcomes
 
 ---
 
 ## 📈 Regression Analysis
 
-A linear regression model was used as a statistical method to analyze the relationship between regional sales and global sales.
+Two regression models were used to analyze the relationship between regional sales and global sales:
 
-* **Features:** NA_Sales, EU_Sales, JP_Sales
-* **Target:** Global_Sales
+### Linear Regression
+- **Features:** `NA_Sales`, `EU_Sales`, `JP_Sales`
+- **Target:** `Global_Sales`
 
----
+### KNN Regression
+- **Features:** `NA_Sales`, `EU_Sales`, `JP_Sales`
+- **Target:** `Global_Sales`
+- Used for performance comparison against linear regression
 
-## 📊 Key Insights
-
-* Regional sales strongly influence global sales
-* Strong correlation exists between NA, EU, and global sales
-* Genre significantly affects game sales
-* Nintendo DS shows strong performance due to its popularity
+**Model Performance Metrics:** R² Score and RMSE were compared across both models.
 
 ---
 
 ## 📊 Sample Visualizations
 
-![Top Games](images/Top_10_Games_by_Global_Sales.png)
-![Sales Distribution](images/Top_5_Platforms_by_Total_Sales.png)
-![Correlation Heatmap](images/Correlation_Between_Regional_and_Global_Sales.png)
+![Top 10 Games by Global Sales](images/Top%2010%20Games%20by%20Global%20Sales.png)
+![Top 5 Platforms by Total Sales](images/Top%205%20Platforms%20by%20Total%20Sales.png)
+![Correlation Between Regional and Global Sales](images/Correlation%20Between%20Regional%20and%20Global%20Sales.png)
+![Popularity of Game Genres by Global Sales](images/Popularity%20of%20Game%20Genres%20by%20Global%20Sales.png)
+![Global Video Game Sales Trend Over Years](images/Global%20Video%20Game%20Sales%20Trend%20Over%20Years.png)
+
+---
+
+## 📊 Key Insights
+
+- Regional sales (NA, EU, JP) are strong predictors of global sales
+- Strong positive correlation exists between NA, EU, and global sales
+- Genre significantly affects game sales (confirmed by ANOVA)
+- A small number of top publishers dominate global sales figures
+- Sales peaked mid-2000s and show a declining trend in later years
 
 ---
 
 ## 🛠️ Technologies Used
 
-* Python
-* Pandas
-* Matplotlib
-* Seaborn
-* Scikit-learn
-* SciPy
+| Tool | Purpose |
+|---|---|
+| Python | Core language |
+| Pandas | Data loading & manipulation |
+| Matplotlib | Custom visualizations |
+| Seaborn | Statistical plots |
+| Scikit-learn | Linear & KNN regression |
+| SciPy | Hypothesis testing (T-Test, ANOVA) |
+| Jupyter Notebook | Interactive analysis environment |
 
 ---
 
@@ -108,23 +136,37 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
+Then open `vgsales_analysis.ipynb` and run all cells.
+
+---
+
+## 📁 Project Structure
+
+```
+video-game-sales-analysis/
+├── vgsales_analysis.ipynb   # Main analysis notebook
+├── vgsales.csv              # Dataset
+├── images/                  # Generated visualizations
+└── README.md
+```
+
 ---
 
 ## 📌 Project Highlights
 
-* Clean and structured data analysis pipeline
-* Use of statistical methods (not heavy ML)
-* Real-world dataset
-* Clear visualization and insights
+- Clean, structured end-to-end analysis pipeline
+- Statistical methods (T-Test, ANOVA, Regression) — no heavy ML
+- Real-world public dataset from Zenodo
+- Rich visualizations with clear insights
 
 ---
 
 ## 👨‍💻 Author
 
-Zayd
+**Zayd**
 
 ---
 
-## ⭐ If you found this useful
+## ⭐ Found this useful?
 
 Give this repo a ⭐ on GitHub!
