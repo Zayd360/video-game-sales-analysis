@@ -107,7 +107,6 @@ Two regression models were used to analyze the relationship between regional sal
 | Matplotlib | Custom visualizations |
 | Seaborn | Statistical plots |
 | Scikit-learn | Linear & KNN regression |
-| SciPy | Hypothesis testing (T-Test, ANOVA) |
 | Jupyter Notebook | Interactive analysis environment |
 
 ---
@@ -140,7 +139,7 @@ video-game-sales-analysis/
 ## 📌 Project Highlights
 
 - Clean, structured end-to-end analysis pipeline
-- Statistical methods (T-Test, ANOVA, Regression) — no heavy ML
+- Statistical methods (Linear & KNN Regression) — no heavy ML
 - Real-world public dataset from Zenodo
 - Rich visualizations with clear insights
 
