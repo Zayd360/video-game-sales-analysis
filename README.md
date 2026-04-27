@@ -21,8 +21,6 @@ The analysis includes:
 - **Source:** [Zenodo – Video Game Sales Dataset](https://zenodo.org/records/5898311)
 - **Type:** Public research dataset
 
-> Note: Government datasets were explored but did not provide sufficient detailed video game sales data. A research dataset from Zenodo was used instead.
-
 ### 📊 Dataset Features
 
 | Column | Description |
